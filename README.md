@@ -132,7 +132,7 @@ ssh-copy-id ansible@<public-ip OR private-ip/>
 
 Now try logging into the machine, with: 
 
-```ssh ansible@172.31.87.142`` Node2
+```ssh ansible@172.31.87.142``` Node1
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/becd19d7-6bf7-4adc-a0e2-9feb271f23d8)
 
