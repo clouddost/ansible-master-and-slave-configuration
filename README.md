@@ -111,7 +111,7 @@ vim /etc/ssh/sshd_config
 service sshd status
 service sshd restart
 ```
-### On Master Machine: As ansible user
+## On Master Machine: As ansible user
 ```sudo su - ansible```
 ```whoami```
 ```pwd``` Make sure directory should be /home/ansible
@@ -122,23 +122,33 @@ Copy Public key (id_rsa.pub) to client machine.
 ssh-copy-id ansible@<public-ip OR private-ip/>
 ```
 ```ssh-copy-id ansible@172.31.87.142``` Node1
+
 ```ssh-copy-id ansible@172.31.93.18``` Node2
 
 Now try logging into the machine, with: 
+
 ```ssh ansible@172.31.87.142`` Node2
+
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/becd19d7-6bf7-4adc-a0e2-9feb271f23d8)
+
 ```ssh ansible@172.31.93.18``` Node2
+
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/47d7e291-cd8a-4e28-bc76-a91b7bb6e7fd)
 Make sure you have ansible.cfg and inventory/hosts files
+
 ```ansible.cfg``` file
 ```
 [defaults]
 inventory = hosts
 ```
+
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/d11ecaa1-825f-48ba-b590-26c047ea3760)
+
 ```hosts``` file
+
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/698b0d22-e093-49af-b632-47cb285ef3e7)
-- Talk to Client Nodes from Master Machine
+
+## Talk to Client Nodes from Master Machine
 
 ```
 ansible all -m ping
