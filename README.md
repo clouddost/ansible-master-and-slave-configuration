@@ -1,32 +1,6 @@
 # ansible-master-and-slave-configuration
 Ansible Master and Slave / Node Configuration
 
-# ansible-master-and-slave-configuration
-Ansible Master and Slave / Node Configuration
-
-# Installing Tomcat using Binary Method on Amazon Linux 2
-
-## Installing Java 11 and Open JDK 11 on Amazon Linux 2:
-
-```t
-sudo amazon-linux-extras install java-openjdk11 -y
-```
-- Confirm the Java is installed or not using following command:
-
-```t
-java -version
-```
-## Install Maven
-
-```t
-sudo yum install maven -y
-```
-- Confirm the Maven is installed or not using following command:
-
-```t
-mvn -v
-```
-
 ## Create 3 EC2 Instances 1 Controller/Master and 2 Slaves/Nodes.
 
 * 1.	Master Instance 
