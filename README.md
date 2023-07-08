@@ -40,9 +40,8 @@ sudo usermod -aG wheel ansible
 id ansible
 ```
 #### OR you can do it manually by editing sudoer file. 
-```visudo``` OR ```vim /etc/sudoers``` 
+```visudo``` OR ```vim /etc/sudoers```
 Replace ``` # %wheel ``` with ``` ansible ```
-```
 ## Same thing without a password
 # %wheel        ALL=(ALL)       NOPASSWD: ALL
 ```
