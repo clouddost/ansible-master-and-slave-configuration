@@ -28,7 +28,6 @@ Node2 Instance
 ```
 sudo hostnamectl set-hostname node2
 ```
-
 ## Create an ansible user on Master machine:
 
 ```
@@ -36,17 +35,13 @@ useradd ansible
 passwd ansible
 ```
 ### Note: The above ansible user should be sudoer / should be in the wheel group.
-
 ```
 sudo usermod -aG wheel ansible
 id ansible
 ```
 #### OR you can do it manually by editing sudoer file. 
-
 ```visudo``` OR ```vim /etc/sudoers``` 
-
 Replace ``` # %wheel ``` with ``` ansible ```
-
 ```
 ## Same thing without a password
 # %wheel        ALL=(ALL)       NOPASSWD: ALL
@@ -60,7 +55,6 @@ ansible        ALL=(ALL)       NOPASSWD: ALL
 id ansible
 ```
 ### Master: Enable password authentication, it must ask the password while exchanging the ssh-keys in the ssh configuration file.
-
 ```
 vim /etc/ssh/sshd_config
 ```
@@ -70,26 +64,18 @@ vim /etc/ssh/sshd_config
 #PermitEmptyPasswords no
 ```
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/51c77f87-5bd8-4fde-8c31-b12f99aaa51f)
-
 ```
 service sshd status
 service sshd restart
 ```
 ### Install Ansible on Master.
-
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
-
 ### Setup Master server:
-
 Make sure python and pip is installed.
-
 ```python –version``` OR ```python3 --version```
 ```pip --version``` OR ```pip3 --version```
-
 Install pip if not installed
-
 ```yum install pip -y``` OR ```yum install pip3 -y```
-
 Installing ansible
 ```
 python3 -m pip install --user ansible
@@ -120,12 +106,10 @@ service sshd status
 service sshd restart
 ```
 ### On Master Machine: As ansible user
-
 ```sudo su - ansible```
 ```whoami```
 ```pwd``` Make sure directory should be /home/ansible
 ```ssh-keygen``` Generate ssh key on Master
-
 Copy Public key (id_rsa.pub) to client machine.
 
 ```
@@ -137,23 +121,17 @@ ssh-copy-id ansible@<public-ip OR private-ip/>
 Now try logging into the machine, with: 
 ```ssh ansible@172.31.87.142`` Node2
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/becd19d7-6bf7-4adc-a0e2-9feb271f23d8)
-
 ```ssh ansible@172.31.93.18``` Node2
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/47d7e291-cd8a-4e28-bc76-a91b7bb6e7fd)
-
 Make sure you have ansible.cfg and inventory/hosts files
-
 ```ansible.cfg``` file
 ```
 [defaults]
 inventory = hosts
 ```
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/d11ecaa1-825f-48ba-b590-26c047ea3760)
-
 ```hosts``` file
-
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/698b0d22-e093-49af-b632-47cb285ef3e7)
-
 - Talk to Client Nodes from Master Machine
 
 ```
