@@ -139,7 +139,8 @@ Now try logging into the machine, with:
 ```ssh ansible@172.31.93.18``` Node2
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/47d7e291-cd8a-4e28-bc76-a91b7bb6e7fd)
-Make sure you have ansible.cfg and inventory/hosts files
+
+## Make sure you have ```ansible.cfg``` and ```inventory/hosts``` files
 
 ```ansible.cfg``` file
 ```
