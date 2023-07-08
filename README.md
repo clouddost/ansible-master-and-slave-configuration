@@ -82,7 +82,7 @@ Install pip if not installed
 
 ```yum install pip -y``` OR ```yum install pip3 -y```
 
-Installing ansible
+Installing ansible using "ansible" user
 ```
 python3 -m pip install --user ansible
 ansible --version
