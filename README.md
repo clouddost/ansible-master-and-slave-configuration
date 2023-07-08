@@ -83,8 +83,8 @@ https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.ht
 
 Make sure python and pip is installed.
 
-``` python –version ``` OR ``` python3 --version ```
-``` pip --version ``` OR ``` pip3 --version ```
+```python –version``` OR ```python3 --version```
+```pip --version``` OR ```pip3 --version```
 
 Install pip if not installed
 
@@ -162,9 +162,3 @@ ansible all -m ping
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/88296430-ed74-4914-9194-80f5e0a50e75)
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/b7e57f96-2cfc-400c-b4d6-bc255028cae5)
-
-
-
-
-
-
