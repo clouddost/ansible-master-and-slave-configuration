@@ -41,7 +41,7 @@ id ansible
 ```
 #### OR you can do it manually by editing sudoer file. 
 ```visudo``` OR ```vim /etc/sudoers```
-Replace ``` # %wheel ``` with ``` ansible ```
+and Replace ``` # %wheel ``` with ``` ansible ```
 ```
 ## Same thing without a password
 # %wheel        ALL=(ALL)       NOPASSWD: ALL
@@ -54,7 +54,7 @@ ansible        ALL=(ALL)       NOPASSWD: ALL
 ```
 id ansible
 ```
-### Master: Enable password authentication, it must ask the password while exchanging the ssh-keys in the ssh configuration file.
+#### Master: Enable password authentication, it must ask the password while exchanging the ssh-keys in the ssh configuration file.
 ```
 vim /etc/ssh/sshd_config
 ```
