@@ -29,7 +29,7 @@ Node2 Instance
 sudo hostnamectl set-hostname node2
 ```
 
-- Create an ansible user on Master machine:
+## Create an ansible user on Master machine:
 
 ```
 useradd ansible
@@ -42,7 +42,7 @@ sudo usermod -aG wheel ansible
 id ansible
 ```
 
-### OR you can do it manually by editing sudoer file. 
+#### OR you can do it manually by editing sudoer file. 
 
 ``` visudo ``` OR ``` vim /etc/sudoers ``` 
 
