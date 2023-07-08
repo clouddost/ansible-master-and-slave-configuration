@@ -73,10 +73,15 @@ service sshd restart
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 ### Setup Master server:
 Make sure python and pip is installed.
+
 ```python –version``` OR ```python3 --version```
+
 ```pip --version``` OR ```pip3 --version```
+
 Install pip if not installed
+
 ```yum install pip -y``` OR ```yum install pip3 -y```
+
 Installing ansible
 ```
 python3 -m pip install --user ansible
