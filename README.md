@@ -2,11 +2,11 @@
 
 ## Create 3 EC2 Instances 1 Controller/Master and 2 Slaves/Nodes.
 
-    * Master Instance 
-    * Node1 Instance
-    * Node2 Instance
+* Master Instance 
+* Node1 Instance
+* Node2 Instance
 
-- I used Amazon Linux 2 Instances for this hands-on.
+-- I used Amazon Linux 2 Instances for this hands-on.
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/cb03d24a-7319-43c1-8df6-b633a5184ad3)
 
