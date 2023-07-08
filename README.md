@@ -142,7 +142,8 @@ Now try logging into the machine, with:
 
 Make sure you have ```ansible.cfg``` and ```inventory/hosts``` files
 
-```ansible.cfg``` file
+* ```ansible.cfg``` file
+
 ```
 [defaults]
 inventory = hosts
@@ -150,7 +151,7 @@ inventory = hosts
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/d11ecaa1-825f-48ba-b590-26c047ea3760)
 
-```hosts``` file
+* ```hosts``` file
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/698b0d22-e093-49af-b632-47cb285ef3e7)
 
