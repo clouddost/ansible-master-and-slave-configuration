@@ -87,7 +87,7 @@ Installing ansible
 python3 -m pip install --user ansible
 ansible --version
 ```
-### Setup client/node machines - as root user
+## Setup client/node machines - as root user
 Ansible is agentless, so not required to install on client/node machines.
 ```
 python3 --version
