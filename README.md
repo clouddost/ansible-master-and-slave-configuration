@@ -69,7 +69,7 @@ vim /etc/ssh/sshd_config
 service sshd status
 service sshd restart
 ```
-### Install Ansible on Master.
+### Install Ansible on Master using "ansible" user.
 https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
 ### Setup Master server:
 Make sure python and pip is installed.
