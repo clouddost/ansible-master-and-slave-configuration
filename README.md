@@ -10,11 +10,11 @@
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/cb03d24a-7319-43c1-8df6-b633a5184ad3)
 
-- Connect all three instances using SSH
+## Connect all three instances using SSH Client
 
 ![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/e361cecb-e9ac-4fd1-bb54-e66fc17c159a)
 
-- Rename IP with hostname on all three instances
+## Rename IP with hostname on all three instances
 
 Master Instance
 ```
