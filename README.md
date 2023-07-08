@@ -62,8 +62,16 @@ sudo hostnamectl set-hostname node2
 useradd ansible
 passwd ansible
 ```
+### Note: The above ansible user should be sudoer / should be in the wheel group.
 
+```
+sudo usermod -aG wheel ansible
+id ansible
+```
 
+### OR you can do it manually by editing sudoer file. 
+
+``` visudo ``` OR ``` vim /etc/sudoers ``` 
 
 
 
