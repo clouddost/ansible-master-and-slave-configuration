@@ -113,14 +113,19 @@ service sshd restart
 ```
 ## On Master Machine: As ansible user
 ```sudo su - ansible```
+
 ```whoami```
+
 ```pwd``` Make sure directory should be /home/ansible
+
 ```ssh-keygen``` Generate ssh key on Master
+
 Copy Public key (id_rsa.pub) to client machine.
 
 ```
 ssh-copy-id ansible@<public-ip OR private-ip/>
 ```
+
 ```ssh-copy-id ansible@172.31.87.142``` Node1
 
 ```ssh-copy-id ansible@172.31.93.18``` Node2
