@@ -2,9 +2,9 @@
 
 ## Create 3 EC2 Instances 1 Controller/Master and 2 Slaves/Nodes.
 
-* Master Instance 
-* Node1 Instance
-* Node2 Instance
+    * Master Instance 
+    * Node1 Instance
+    * Node2 Instance
 
 - I used Amazon Linux 2 Instances for this hands-on.
 
