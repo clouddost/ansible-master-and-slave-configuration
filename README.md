@@ -107,6 +107,7 @@ vim /etc/ssh/sshd_config
 #PasswordAuthentication yes uncomment this
 #PermitEmptyPasswords no
 ```
+![image](https://github.com/clouddost/ansible-master-and-slave-configuration/assets/111498842/51c77f87-5bd8-4fde-8c31-b12f99aaa51f)
 ```
 service sshd status
 service sshd restart
